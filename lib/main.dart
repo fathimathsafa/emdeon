@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'firebase_options.dart'; 
+import 'screens/firebase_options.dart';
 
 import 'package:emdeon/screens/LoginScreen.dart';
 import 'package:emdeon/screens/homeScreen.dart';
