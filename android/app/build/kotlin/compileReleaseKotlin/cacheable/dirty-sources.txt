@@ -1,0 +1,1 @@
+C:\Users\SAFA\StudioProjects\emdeon\android\app\src\main\kotlin\com\example\emdeon\MainActivity.kt

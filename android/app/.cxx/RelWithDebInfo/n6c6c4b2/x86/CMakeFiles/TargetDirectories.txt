@@ -1,0 +1,2 @@
+C:/Users/SAFA/StudioProjects/emdeon/android/app/.cxx/RelWithDebInfo/n6c6c4b2/x86/CMakeFiles/edit_cache.dir
+C:/Users/SAFA/StudioProjects/emdeon/android/app/.cxx/RelWithDebInfo/n6c6c4b2/x86/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,32 @@
+// Root build.gradle (project-level)
+buildscript {
+    ext {
+        // Define Kotlin version here, to be used throughout the project
+        kotlin_version = '2.1.20'  // Define Kotlin version
+    }
+    repositories {
+        google()  // Ensure this repository is present
+        mavenCentral()  // Ensure Maven Central is included
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.0'  // Your current version of Gradle
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"  // Using the defined Kotlin version
+        classpath 'com.google.gms:google-services:4.4.2'  // Google services classpath
+    }
+}
+
+allprojects {
+    repositories {
+        google()  // Google repository for dependencies
+        mavenCentral()  // Maven Central for other dependencies
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
